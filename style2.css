@@ -1,0 +1,40 @@
+* {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.aboutus-section h6 {
+    font-weight: bold;
+    font-size: 20px;
+
+
+}
+
+body {
+    background: linear-gradient(to bottom, #615cfd 0%, #d465ef 50%);
+
+}
+
+body .section {
+    background: linear-gradient(to bottom, #615cfd 0%, #d465ef 50%);
+
+}
+
+
+#transform {
+    text-transform: capitalize;
+    font-weight: normal;
+}
+
+#uppercase {
+    text-transform: uppercase;
+    font-weight:bold;
+    font-size: 20px;
+}
+
+@media (max-width:768px) {
+
+}
+
+@media (max-width:425px) {}
+
+@media (max-width:320px) {}
