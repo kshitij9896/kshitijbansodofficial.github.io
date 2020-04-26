@@ -13,17 +13,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="style2.css">
     <style>
-    body {
-        background: linear-gradient(to bottom, #615cfd 50%, #d465ef 50%);
-
-    }
-
-    body .section {
-        background: linear-gradient(to bottom, #615cfd 0%, #d465ef 50%);
-
-    }
-    </style>
-    <style>
     * {
         font-family: 'Josefin Sans', sans-serif;
     }
@@ -34,11 +23,13 @@
         height: 100vh;
         background: #fff url('img/sample.gif') no-repeat center;
         z-index: -1;
-
+    }
+    body{
+        background: linear-gradient(to bottom, #615cfd 20%, #d465ef 70%);
 
     }
-    </style>
-</head>
+      </style>
+  </head>
 
 <body onload="preloaderdemo()" ondragstart="return false" onselectstart="return false">
     <div id="loading"></div>
@@ -47,19 +38,19 @@
             <a href="#!" class="brand-logo">Kshitij</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fa fa-bars" style="font-size: 25px;"></i></a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#mainsection">Home</a></li>
+                <li><a href="#kshitijskills">Skills</a></li>
+                <li><a href="#contactkshitij" >Contact</a></li>
                 <!-- <li><a href="mobile.html">Demo</a></li> -->
             </ul>
         </div>
     </nav>
     <ul class="sidenav" id="mobile-demo">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index">Home</a></li>
+        <li><a href="skills">Skills</a></li>
+        <li><a href="contact">Contact</a></li>
     </ul>
-    <div class="aboutus-section white-text">
+    <div class="aboutus-section white-text" id="mainsection">
         <h2 class="center-align white-text">Kshitij Bansod</h2>
         <div class="container">
             <div class="row">
@@ -101,10 +92,51 @@
             </div>
         </div>
     </div>
+
+
+
+
+
+
+
     <div class="parallax-container">
         <div class="parallax"><img src="img/software enginner 1.svg" class="responsive-img"></div>
     </div>
-    <div class="section white">
+    <div class="aboutus-section white-text" id="kshitijskills">
+        <h2 class="center-align white-text">Skills Sets</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col m6 s12">
+                    <img class="circle responsive-img hoverable" src="img/3.png">
+                </div>
+                <div class="col m6 s12 hoverable">
+                    <!-- <h4>Kshitij Bansod</h4> -->
+                    <!-- <h6></h6> -->
+                    <!-- <h4>WEB DEVELOPER</h4> -->
+                    <!-- <h6>MCA(Pursuing)</h6>   -->
+                    <!-- <h6>Skill Set</h6> -->
+                    <p id="uppercase" style="font-weight: bold; font-size:15px;">Web Technology Knowledge</p>
+                    <p id="transform">
+                        HTML5  |  CSS3  |  Materialized CSS</p>
+                    <p id="uppercase" style="font-weight: bold; font-size:15px;">Programming Languages</p>
+                    <p id="transform">
+                        PHP7  |  JavaScript  |  Python(basic)  |  Java | C++  |  C#(basic) | C
+                    </p>
+                    <p id="uppercase" style="font-weight: bold; font-size:15px;">Scripting Language</p>
+                    <p id="transform"> PHP7 | JavaScript | Jquery | Ajax</p>
+                    <p id="uppercase" style="font-weight: bold; font-size:15px;">Other Currently Learning</p>
+                    <p>Python | Boostrap4 | Jquery |  Node.js | React JS  Angular8 | React Native | Ionic</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="img/software-engineers-work-desk-vector.jpeg" class="responsive-img"></div>
+    </div>
+
+     <div class="section white" id="contactkshitij">
         <div class="row container">
             <h4 class="header center-align white-text">Get In Touch</h4>
             <!--    <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
@@ -128,9 +160,9 @@
                     <!-- Social Media</p> -->
                     <p class="center-align">
                         <a class="#1565c0 blue-text text-darken-3" href="https://www.facebook.com/kshitij.bansod.7" target="_blank"><i class="fa fa-facebook" style="font-size: 25px;" aria-hidden="true"></i></a>
-                        &nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;
                         <a class="#1565c0 blue-text text-darken-3" href="https://www.instagram.com/kshitij_bansod9896/" target="_blank"><i class="fa fa-instagram" style="font-size: 25px;" aria-hidden="true"></i></a>
-                        &nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;
                         <a class="#1565c0 blue-text text-darken-3" href="https://www.linkedin.com/in/kshitij-bansod-411457199" target="_blank"> <i class="fa fa-linkedin" style="font-size: 25px;" aria-hidden="true"></i></a>
                         <!-- <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li> -->
                     </p>
@@ -140,9 +172,15 @@
     </div>
     </div>
     </div>
+
+
+
     <div class="parallax-container">
         <div class="parallax"><img src="img/2.jpg" class="responsive-img hoverable"></div>
     </div>
+
+
+
 
 
 
@@ -203,6 +241,7 @@
 $(document).ready(function() {
     $('.sidenav').sidenav();
     $('.parallax').parallax();
+    $('.scrollspy').scrollSpy();
     $('.count').counterUp({
     delay: 10,
     time: 2000
@@ -214,5 +253,6 @@ var Preloader = document.getElementById('loading');
 
 function preloaderdemo() {
     Preloader.style.display = 'none';
+
 }
 </script>
