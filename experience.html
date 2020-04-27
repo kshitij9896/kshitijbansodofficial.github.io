@@ -1,97 +1,95 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--Let browser know website is optimized for mobile-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="style2.css">
-    <style>
-         * {
-        font-family: 'Josefin Sans', sans-serif;
-    }
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <!--Let browser know website is optimized for mobile-->
 
-     body {
+
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="style2.css">
+  <style>
+  body {
         background: linear-gradient(to bottom, #615cfd 50%, #d465ef 50%);
 
     }
 
-    body .aboutus-section{
+    body .section{
 background: linear-gradient(to bottom, #615cfd 0%, #d465ef 50%);
 
   }
- 
-   
-    #loading {
-        position: fixed;
-        width: 100%;
+      *{ font-family: 'Josefin Sans', sans-serif;}
+      #loading{
+        position :fixed;
+        width:100%;
         height: 100vh;
-        background: #fff url('img/sample.gif') no-repeat center;
+        background: #fff url('img/sample.gif')
+        no-repeat center;
         z-index: -1;
 
     }
-    </style>
-</head>
+  </style>
 
+
+</head>
 <body onload="preloaderdemo()" ondragstart="return false" onselectstart="return false">
-    <div id="loading"></div>
-    <nav class="#1565c0 blue darken-3">
-        <div class="nav-wrapper container">
-            <a href="index" class="brand-logo">Kshitij</a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fa fa-bars" style="font-size: 25px;"></i></a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="index">Home</a></li>
-                <li><a href="skills">Skills</a></li>
-                <li><a href="contact">Contact</a></li>
-                <li><a href="experience">Experience</a></li>
-            </ul>
-        </div>
-    </nav>
-    <ul class="sidenav" id="mobile-demo">
+  <div id="loading"></div>
+
+  <nav class="#1565c0 blue darken-3">
+    <div class="nav-wrapper container">
+      <a href="index" class="brand-logo">Kshitij</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fa fa-bars" style="font-size: 25px;"></i></a>
+      <ul class="right hide-on-med-and-down">
         <li><a href="index">Home</a></li>
         <li><a href="skills">Skills</a></li>
         <li><a href="contact">Contact</a></li>
+        <li><a href="experience">Demo</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+      <li><a href="index">Home</a></li>
+        <li><a href="skills">Skills</a></li>
+        <li><a href="contact">Contact</a></li>
         <li><a href="experience">Experience</a></li>
-    </ul>
+       </ul>
+
+
 
 <div class="parallax-container">
       <div class="parallax"><img src="img/software enginner 1.svg" class="responsive-img"></div>
     </div>
 
 
-    <div class="aboutus-section white-text">
-        <h2 class="center-align white-text">Skills Sets</h2>
-        <div class="container">
-            <div class="row">
-                <div class="col m6 s12">
-                    <img class="circle responsive-img hoverable" src="img/3.png">
+
+<div class="section white">
+        <div class="row container">
+            <h4 class="header center-align white-text">Experience</h4>
+            <!--    <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+      -->
+            <!-- <div class="col m4 l4 s12"> -->
+            <div class="card hoverable">
+                <div class="card-image">
+                    <img class="responsive-img" src="img/800px_COLOURBOX31429302.jpg" class="responsive-img">
+                    <!-- <span class="card-title pink-text">Contact Us</span> -->
                 </div>
-                <div class="col m6 s12 hoverable">
-                    <!-- <h4>Kshitij Bansod</h4> -->
-                    <!-- <h6></h6> -->
-                    <!-- <h4>WEB DEVELOPER</h4> -->
-                    <!-- <h6>MCA(Pursuing)</h6>   -->
-                    <!-- <h6>Skill Set</h6> -->
-                    <p id="uppercase" style="font-weight: bold; font-size:15px;">Web Technology Knowledge</p>
-                    <p id="transform">
-                        HTML5  |  CSS3  |  Materialized CSS</p>
-                    <p id="uppercase" style="font-weight: bold; font-size:15px;">Programming Languages</p>
-                    <p id="transform">
-                        PHP7  |  JavaScript  |  Python(basic)  |  Java | C++  |  C#(basic) | C
+                <div class="card-content">
+                    <p style="font-weight: bold; font-size:20px;">
+                        Internship at LearnTEZ</p>
+                    <p style="font-size: 15px;">Designation : Web Developer(Intern)<br>
+                        <!-- <p style="font-weight: bold; font-size:20px;"> -->
+                        Feb-2020 Present</p>
+                    <!-- <p style="font-size: 15px;"> kshitijbansod9896@gmail.com</p> -->
                     </p>
-                    <p id="uppercase" style="font-weight: bold; font-size:15px;">Scripting Language</p>
-                    <p id="transform"> PHP7 | JavaScript | Jquery | Ajax</p>
-                    <p id="uppercase" style="font-weight: bold; font-size:15px;">Other Currently Learning</p>
-                    <p>Python | Boostrap4 | Jquery |  Node.js | React JS  Angular8 | React Native | Ionic</p>
                 </div>
             </div>
         </div>
     </div>
-
-
+   
     <div class="parallax-container">
       <div class="parallax"><img src="img/2.jpg" class="responsive-img hoverable"></div>
     </div>
@@ -145,24 +143,28 @@ background: linear-gradient(to bottom, #615cfd 0%, #d465ef 50%);
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
-  </body>
 
+
+
+</body>
 </html>
 <script>
-$(document).ready(function() {
+  $(document).ready(function(){
     $('.sidenav').sidenav();
-    $('.parallax').parallax();
-     $('.count').counterUp({
+        $('.parallax').parallax();
+        $('.count').counterUp({
     delay: 10,
     time: 2000
 });
-});
 
-
+  });
 
 var Preloader = document.getElementById('loading');
 
-function preloaderdemo() {
-    Preloader.style.display = 'none';
+function preloaderdemo()
+{
+  Preloader.style.display = 'none';
 }
-</script>
+
+  </script>
+
