@@ -1,3 +1,6 @@
+
+ErrorDocument 404 /Error Page.html
+
 # mod_rewrite starts here
 
 RewriteEngine on
