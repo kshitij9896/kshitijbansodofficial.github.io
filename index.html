@@ -160,7 +160,13 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('.sidenav').sidenav();
     $('.parallax').parallax();
-     
+
+    (function($) {
+        $(document).on('contextmenu', 'img', function() {
+            return false;
+        });
+    })(jQuery);
+
 });
 
 
