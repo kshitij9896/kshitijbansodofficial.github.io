@@ -1,50 +1,54 @@
 * {
-    font-family: 'Josefin Sans', sans-serif;
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-}
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+#header nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase; }
+
 html {
+  scroll-behavior: smooth; }
 
-        scroll-behavior: smooth;
-    }
+body {
+  background: linear-gradient(to bottom, #aa00ff 20%, #f48fb1 70%);
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; }
 
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
-p{
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
+div p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px; }
 
 .aboutus-section h6 {
-    font-weight: bold;
-    font-size: 20px;
+  font-weight: bold;
+  font-size: 20px; }
 
-
-}
-
-ul li .title-size{
-font-size: 15px;
-}
+ul li .title-size {
+  font-size: 15px; }
 
 #transform {
-    text-transform: capitalize;
-    font-weight: normal;
-}
+  text-transform: capitalize;
+  font-weight: normal; }
 
 #uppercase {
-    text-transform: uppercase;
-    font-weight:bold;
-    font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px; }
+
+@media (max-width: 1024px) {
+  /*footer-section p{
+font-size: 12px;
 }
-
-
-@media (max-width:768px) {
-
-}
-
-@media (max-width:425px) {}
-
-@media (max-width:320px) {}
+*/ }

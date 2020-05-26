@@ -1,5 +1,6 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
+
 <head>
     <title>Kshitij Bansod Official</title>
     <!--Import Google Icon Font-->
@@ -8,100 +9,30 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="w3.css">  
-    <link rel="stylesheet" href="normalize.css">
-    
+    <!-- <link rel="stylesheet" href="w3.css">   -->
+    <!-- <link rel="stylesheet" href="normalize.css"> -->
     <link rel="stylesheet" type="text/css" href="css/style2.css">
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
-
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
     <style>
-        
-
-    #loading {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #fff url('img/sample.gif') no-repeat center;
-        z-index: -1;
-    }
-	body {
-        background: linear-gradient(to bottom, #aa00ff  20%, #f48fb1 70%);
-        animation: fadeInAnimation ease 3s;
-        animation-iteration-count:1;
-        animation-fill-mode: forwards;
-
-    }
-
-    body .section {
+    body .section  {
         background: linear-gradient(to bottom, #aa00ff 0%, #f48fb1 50%);
+    }
+    #projectsection{
+        background: linear-gradient(to bottom, #aa00ff 0%, #f48fb1 70%);
 
     }
+    </style>
+</head>
+<body ondragstart="return false" onselectstart="return false">
 
-    @keyframes fadeInAnimation {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-
-      </style>
-  </head>
-<body onload="preloaderdemo()" ondragstart="return false" onselectstart="return false">
-    <div id="loading"></div>
 
 <div id="header">
 </div>
-    <div class="aboutus-section white-text" id="mainsection">
-        <h2 class="center-align white-text">Kshitij Bansod</h2>
-        <div class="container">
-            <div class="row">
-                <div class="col m6 s12">
-                    <img class="circle responsive-img hoverable" src="img/PicsArt_1587129264594.jpeg">
-                </div>
-                <div class="col m6 s12 hoverable z-depth-5">
-                    <!-- <h4>Kshitij Bansod</h4> -->
-                    <h6>Hi, I'm Kshitij.</h6>
-                    but you can call me Danny
-                    <h4>WEB DEVELOPER</h4>
-                    <!-- <h6>MCA(Pursuing)</h6>   -->
-                    <!-- <h6>Skill Set</h6> -->
-                    <!-- <p id="uppercase">Web Technology</p> -->
-                    <p id="transform">
-                        Tech Geek</p>
-                    <p id="transform">
-                        Fun Loving Guy</p>
-                     <p>Passionate About Programming & Designing</p>
-                      <p>  Love to design & code</p>
-                      <p>  Always Excited For New Ideas</p>
-                       <p> A Learner Always </p>
-                       <p> Music Lover</p>
-                        " Stay Hungry Stay Foolish " - Steve Jobs
-                    </p>
-                    <!-- 
-    <p id="uppercase">Programming Languages</p>
-    <p id="transform">
-      PHP7 | Python(basic) | Java | C++ | C |  C#(basic)
-    </p>
 
-<p id="uppercase">Scripting Language</p>
- <p id="transform"> PHP7 | JavaScript | Jquery </p> 
-
-    <p id="uppercase">Other Currently Learning</p>
-    <p>Python,Boostrap4,Jquery, Node.js,React JS,Angular8,React Native,Ionic</p>
-  -->
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
+<div id="mainsection"></div>
     <div class="parallax-container">
         <div class="parallax"><img src="img/software enginner 1.svg" class="responsive-img"></div>
     </div>
@@ -110,7 +41,7 @@
     <div class="parallax-container">
         <div class="parallax"><img src="img/software enginner 1.svg" class="responsive-img"></div>
     </div>
-    <div id="contactkshitij">
+    <div class="section white" id="contactkshitij" >
     </div>
     <div class="parallax-container">
         <div class="parallax"><img src="img/software-engineers-work-desk-vector.jpeg" class="responsive-img"></div>
@@ -131,34 +62,36 @@
 
 
 
-
     <div id="footer"></div>
-
     <!-- Compiled and minified JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 </body>
 
 </html>
 <script>
+
+
+
+    
 $(document).ready(function() {
     $('#header').load('header.html');
-    $('#kshitijskills').load('skills.html');
+    $('#mainsection').load('mainsection.html');
     $('#projectsection').load('projects.html');
+    $('#kshitijskills').load('skills.html');
     $('#experience').load('experience.html');
     $('#contactkshitij').load('contact.html');
     $('#footer').load('Footer.html');
 
 });
-
 </script>
-
 <script>
 $(document).ready(function() {
     $('.sidenav').sidenav();
     $('.parallax').parallax();
+     $('.collapsible').collapsible();
 
     (function($) {
         $(document).on('contextmenu', 'img', function() {
@@ -168,11 +101,4 @@ $(document).ready(function() {
 
 });
 
-
-
-var Preloader = document.getElementById('loading');
-
-function preloaderdemo() {
-    Preloader.style.display = 'none';
-}
 </script>

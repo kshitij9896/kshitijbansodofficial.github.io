@@ -1,0 +1,14 @@
+{
+  "name": "kshitijbansodofficial1",
+  "version": "1.0.0",
+  "description": "Using SASS in the Project & To learn",
+  "main": "index.js",
+  "scripts": {
+       "compile:sass" : "node-sass scss/main.scss css/style2.css -w" 
+  },
+  "author": "Kshitij Bansod",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
