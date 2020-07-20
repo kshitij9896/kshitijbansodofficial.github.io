@@ -1,65 +1,58 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-
 <head>
-    <title>Kshitij Bansod | Portfolio</title>
-    <!--Import Google Icon Font-->
-    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
-    <!--Import materialize.css-->
-    <!--Let browser know website is optimized for mobile-->
+    <meta charset="UTF-8">
+    <meta name="description" content="Kshitij Bansod is a Web Developer,Hello This is my Personal Portfolio Website" title="Kshitij Bansod | Portfolio">
+    <meta name="keywords" content="Kshitij Bansod,Kshitij,Kshitijbansodwebsite,Web Developer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kshitij Bansod | Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- <link rel="stylesheet" href="w3.css">   -->
-    <!-- <link rel="stylesheet" href="normalize.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style2.css">
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
     <style>
-    body .section {
+    body {
         background: linear-gradient(to bottom, #aa00ff 0%, #f48fb1 50%);
     }
 
-    #projectsection {
-        background: linear-gradient(to bottom, #aa00ff 0%, #f48fb1 70%);
+    body .section {
+        background: linear-gradient(to bottom, #aa00ff 0%, #f48fb1 50%);
 
     }
+/*    .show-on-small{
+        height: 100vh;
+        min-width: 100%;
+    }
+    .show-on-small img{
+        min-width: 100%;
+    } */   
     </style>
 </head>
 
 <body ondragstart="return false" onselectstart="return false">
     <div id="header">
     </div>
-    <div id="mainsection"></div>
+    <div id="mainsection" class="show-on-small"></div>
+
     <div class="parallax-container">
         <div class="parallax"><img src="img/software enginner 1.webp" class="responsive-img"></div>
     </div>
-    <div class="aboutus-section1 show-on-small" id="kshitijskills">
+    <!-- <div class="aboutus-section1 show-on-small" id="kshitijskills"> -->
+         <div id="certificationsection" class="show-on-small">
+   
     </div>
     <div class="parallax-container">
         <div class="parallax"><img src="img/software enginner 1.webp" class="responsive-img"></div>
     </div>
-    <div class="section white show-on-small" id="contactkshitij">
+    <!-- <div class="section white show-on-small" id="contactkshitij"> -->
     </div>
-    <div class="parallax-container">
-        <div class="parallax"><img src="img/software-engineers-work-desk-vector.webp" class="responsive-img"></div>
-    </div>
-    <div id="projectsection" class="show-on-small">
-    </div>
-    <div class="parallax-container">
-        <div class="parallax"><img src="img/2.webp" class="responsive-img hoverable"></div>
-    </div>
-    <div id="experience" class="show-on-small">
-    </div>
-    <div class="parallax-container">
-        <div class="parallax"><img src="img/2.webp" class="responsive-img hoverable"></div>
-    </div>
-    <div id="footer"></div>
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+        <div id="footer"></div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js" integrity="sha256-RGlAwHKG24hsj1109SGQgvR+Orx7u8c6zyYH4Tk3ydU=" crossorigin="anonymous"></script>
+      -->   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        
 </body>
 
 </html>
@@ -67,10 +60,10 @@
 $(document).ready(function() {
     $('#header').load('header.html');
     $('#mainsection').load('mainsection.html');
-    $('#projectsection').load('projects.html');
-    $('#kshitijskills').load('skills.html');
-    $('#experience').load('experience.html');
-    $('#contactkshitij').load('contact.html');
+    $('#certificationsection').load('projects.html');
+    // $('#kshitijskills').load('skills.html');
+    // $('#experience').load('experience.html');
+    // $('#contactkshitij').load('contact.html');
     $('#footer').load('Footer.html');
 
 });
@@ -89,3 +82,10 @@ $(document).ready(function() {
 
 });
 </script>
+<!-- <script>
+    $(function(){
+        $.scrollify({
+            section:".show-on-small",
+        });
+    });
+</script> -->
